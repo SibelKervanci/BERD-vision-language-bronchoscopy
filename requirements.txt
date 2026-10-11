@@ -1,0 +1,12 @@
+# Versions used for the reported results (also recorded in results/manifest_*.json)
+torch==2.5.1
+torchvision==0.20.1
+open_clip_torch==3.3.0
+transformers==5.17.0
+scikit-learn==1.7.2
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.15.3
+matplotlib
+pillow
+joblib

@@ -1,0 +1,11 @@
+# data (download BERD separately; see README)
+dataset/
+# large training artefacts
+checkpoints_vl/
+checkpoints_sup/
+results/features/
+results/preds_cache/
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
