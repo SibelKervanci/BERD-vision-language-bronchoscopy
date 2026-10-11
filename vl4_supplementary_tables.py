@@ -85,7 +85,7 @@ def lettered(tex, num, letter):
 
 
 def tex_escape(s):
-    return s.replace("{}", r"\{\}").replace("_", r"\_").replace("&", r"\&").replace("%", r"\%")
+    return s.replace("{}", r"[\textit{finding}]").replace("_", r"\_").replace("&", r"\&").replace("%", r"\%")
 
 
 # ─────────────────────────────────────────────────────────────── S1 prompts
@@ -110,7 +110,7 @@ def s1():
            f"into each of three templates ({tmpl}), giving six prompts per class; BERD-vocabulary phrases "
            "were used as complete prompts. Class embeddings are the re-normalised mean of the prompt "
            "embeddings. Location prompts: " +
-           "; ".join(f"``{tex_escape(t)}''" for t in P["LOCATION_TEMPLATES"]) + ".")
+           "; ".join(f"``{tex_escape(t).replace('finding', 'location')}''" for t in P["LOCATION_TEMPLATES"]) + ".")
     return table("tab:S1", cap, ">{\\raggedright\\arraybackslash}p{3.0cm}XX",
                  r"\textbf{Class} & \textbf{Generic Phrases} & \textbf{BERD-Vocabulary Prompts}", rows)
 
