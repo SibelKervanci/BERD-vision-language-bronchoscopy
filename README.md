@@ -3,7 +3,7 @@
 Code for the manuscript
 
 > Kervancı, İ.S. *Report-Supervised Vision–Language Alignment for Label-Efficient Bronchoscopic
-> Finding Recognition.* Diagnostics (under review), 2026.
+> Finding Recognition.* Bioengineering (under review), 2026.
 
 BiomedCLIP is aligned with the image–caption pairs of the public **Bronchoscopy Examination Report
 Dataset (BERD)** and evaluated for zero-shot finding recognition, cross-modal retrieval, label-efficient
